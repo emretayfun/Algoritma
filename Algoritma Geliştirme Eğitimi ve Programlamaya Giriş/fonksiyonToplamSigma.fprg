@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-27 01:58:54 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MTI6NTU6MTUgw5bDljszNjQ0"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDE6NTg6NTQgw5bDljs0OzM3NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, t, i, s, j, k" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane toplam dizisi kullanacaks&#305;n&#305;z?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a" type="Integer" array="True" size="2 * b"/>
+            <assign variable="j" expression="1"/>
+            <assign variable="k" expression="1"/>
+            <for variable="i" start="0" end="2 * b - 1" direction="inc" step="1">
+                <if expression="i % 2 == 0">
+                    <then>
+                        <output expression="k &amp; &quot;. toplam&#305;n ba&#351;lang&#305;&#231; de&#287;erini giriniz.&quot;" newline="True"/>
+                        <assign variable="k" expression="k + 1"/>
+                    </then>
+                    <else>
+                        <output expression="j &amp; &quot;. toplam&#305;n biti&#351; de&#287;erini giriniz.&quot;" newline="True"/>
+                        <assign variable="j" expression="j + 1"/>
+                    </else>
+                </if>
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="2 * b - 1" direction="inc" step="2">
+                <assign variable="t" expression="s(a[i], a[i + 1])"/>
+                <assign variable="s" expression="s + t"/>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+    <function name="s" type="Integer" variable="s">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="z" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="s, i, t" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="a" end="z" direction="inc" step="1">
+                <assign variable="s" expression="s + i"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

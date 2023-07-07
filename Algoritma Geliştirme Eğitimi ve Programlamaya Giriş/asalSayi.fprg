@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-12 08:22:08 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDc6MDY6MTYgw5ZTOzM1MDg="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDc6MDY6MTggw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDc6MDI6NDMgw5ZTO2dpcmlsZW5TYXlpS2FkYXJNdWh0ZXNlbVNheWlZYXptYWtfMy5mcHJnOzExMzY1"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDg6MjI6MDggw5ZTOzI7MzYxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;bir say&#305; gir&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="b" expression="2"/>
+            <while expression="a % b &lt;&gt; 0 &amp;&amp; b &lt;= a / 2">
+                <assign variable="b" expression="b + 1"/>
+            </while>
+            <if expression="2 * b &gt;= a">
+                <then>
+                    <output expression="a &amp; &quot; asal&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="a &amp; &quot; asal de&#287;il&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

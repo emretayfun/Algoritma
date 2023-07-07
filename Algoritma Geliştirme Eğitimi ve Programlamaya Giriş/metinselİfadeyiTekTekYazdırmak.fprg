@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-27 06:18:11 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDY6MDg6NDYgw5ZTOzM1MTg="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDY6MTg6MTEgw5ZTOzE7MzYxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <assign variable="s" expression="&quot;Elektronik ve Haberle&#351;me M&#252;hendisi Emre TAYFUN&quot;"/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="0" end="Len(s) - 1" direction="inc" step="1">
+                <output expression="Char(s, i)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

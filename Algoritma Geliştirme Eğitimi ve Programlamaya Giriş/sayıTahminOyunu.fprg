@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 03:57:07 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDI6MDc6MDMgw5ZTOzM1MDA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDM6NTc6MDcgw5ZTOzEzOzM2Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, t, h" type="Integer" array="False" size=""/>
+            <assign variable="r" expression="random(100) + 1"/>
+            <assign variable="h" expression="10"/>
+            <output expression="&quot;Akl&#305;mdan bir say&#305; tutum. Tahmin et bakal&#305;m, ka&#231;t&#305;r? &quot;&amp;h&amp;&quot; tahmin hakk&#305;n var.&quot;" newline="True"/>
+            <input variable="t"/>
+            <while expression="h &gt; 1 &amp;&amp; t &lt;&gt; r">
+                <assign variable="h" expression="h -1"/>
+                <if expression="t &lt; r">
+                    <then>
+                        <output expression="&quot;Yukar&#305;! &quot; &amp; h &amp; &quot; tahmin hakk&#305;n&#305;z kald&#305;.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;A&#351;a&#287;&#305;! &quot; &amp; h &amp; &quot; tahmin hakk&#305;n&#305;z kald&#305;.&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="t"/>
+            </while>
+            <if expression="t == r">
+                <then>
+                    <output expression="&quot;Teberikler! Do&#287;ru tahmin.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Malesef do&#287;ru tahmin edemediniz ve tahmin hakk&#305;n&#305;z bitmi&#351;tir, Akl&#305;mdan tutu&#287;um say&#305; &quot; &amp; r &amp; &quot; idi.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="yolBir" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="100"/>
+            <declare name="i, r, t" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="99" direction="inc" step="1">
+                <assign variable="a[i]" expression="i + 1"/>
+            </for>
+            <declare name="s, d" type="String" array="False" size=""/>
+            <assign variable="s" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="99" direction="inc" step="1">
+                <assign variable="s" expression="s &amp; ToString(a[i])"/>
+            </for>
+            <assign variable="d" expression="Char(s, Random(Len(s)-1)) &amp; Char(s, Random(Len(s)-1))"/>
+            <assign variable="r" expression="ToInteger(d) + 1"/>
+            <assign variable="i" expression="10"/>
+            <output expression="&quot;Akl&#305;mda tuutu&#287;um say&#305;y&#305; tahmin et. 10 tane tahmin hakk&#305;n var!&quot;" newline="True"/>
+            <input variable="t"/>
+            <while expression="i &gt; 1 &amp;&amp; t &lt;&gt; r">
+                <assign variable="i" expression="i -1"/>
+                <if expression="t &lt; r">
+                    <then>
+                        <output expression="&quot;Yukar&#305;! &quot; &amp; i &amp; &quot; tahmin hakk&#305;n&#305;z kald&#305;.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;A&#351;a&#287;&#305;! &quot; &amp; i &amp; &quot; tahmin hakk&#305;n&#305;z kald&#305;.&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="t"/>
+            </while>
+            <if expression="t == r">
+                <then>
+                    <output expression="&quot;Teberikler! Do&#287;ru tahmin.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Malesef do&#287;ru tahmin edemediniz ve tahmin hakk&#305;n&#305;z bitmi&#351;tir, Akl&#305;mdan tutu&#287;um say&#305; &quot; &amp; r &amp; &quot; idi.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

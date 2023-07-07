@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-27 07:58:15 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDc6NTI6NDggw5ZTOzM1MjA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDc6NTI6NDkgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDY6MDg6NDYgw5ZTO21ldGluc2VsxLBmYWRleWlUZWtUZWtZYXpkxLFybWFrLmZwcmc7MTEyNjE="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDc6NTg6MTUgw5ZTOzE7MzYyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <declare name="s, m" type="String" array="False" size=""/>
+            <assign variable="s" expression="&quot;Elektronik ve Haberle&#351;me M&#252;hendisi Emre TAYFUN&quot;"/>
+            <assign variable="m" expression="&quot; &quot;"/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="0" end="Len(s) - 1" direction="inc" step="1">
+                <assign variable="m" expression="Char(s, i) &amp; &quot; &quot; &amp; m"/>
+            </for>
+            <output expression="m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

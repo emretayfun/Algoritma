@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-31 12:58:03 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MTE6Mjc6MTQgw5ZTOzM1MDQ="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MTE6Mjc6NTAgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDg6MjU6NDMgw5ZTO2RpemnEsMOnaW5kZURlxJ9pxZ9pa0JpcsSwxZ9sZW1fMi5mcHJnOzExNjI3"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzE7MTI6NTg6MDMgw5bDljs0OzM3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, i, j, L, R, O, n, k, g" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a" type="Integer" array="True" size="b"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="j" start="0" end="b - 2" direction="inc" step="1">
+                <for variable="i" start="0" end="b - 2" direction="inc" step="1">
+                    <if expression="a[i] &gt; a[i + 1]">
+                        <then>
+                            <assign variable="g" expression="a[i]"/>
+                            <assign variable="a[i]" expression="a[i + 1]"/>
+                            <assign variable="a[i + 1]" expression="g"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;Bulunmas&#305;n&#305; istedi&#287;iniz say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="L" expression="0"/>
+            <assign variable="R" expression="b - 1"/>
+            <assign variable="k" expression="0"/>
+            <while expression="R &gt;= L &amp;&amp; k == 0">
+                <assign variable="O" expression="(L + R) / 2"/>
+                <if expression="n &gt; a[O]">
+                    <then>
+                        <assign variable="L" expression="O + 1"/>
+                    </then>
+                    <else>
+                        <if expression="n &lt; a[O]">
+                            <then>
+                                <assign variable="R" expression="O - 1"/>
+                            </then>
+                            <else>
+                                <assign variable="k" expression="1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <if expression="k == 1">
+                <then>
+                    <output expression="n &amp; &quot; say&#305; &quot; &amp; O &amp; &quot;. indiste bulunmaktad&#305;r. Yani &quot; &amp; O + 1 &amp; &quot;. s&#305;radad&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aranan de&#287;er bulunamam&#305;&#351;t&#305;r.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

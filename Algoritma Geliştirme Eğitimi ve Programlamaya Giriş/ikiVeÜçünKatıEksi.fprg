@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 06:32:15 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDY6MTQ6NTEgw5ZTOzM1MDU="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDY6MzI6MTUgw5ZTOzQ7MzYxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i, A, B" type="Integer" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <output expression="&quot;Bir poztif tam say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Hangi sonu&#231; bulunsun? (A / B)&quot;" newline="True"/>
+            <input variable="s"/>
+            <if expression="s == &quot;A&quot;">
+                <then>
+                    <assign variable="A" expression="0"/>
+                    <for variable="i" start="1" end="x" direction="inc" step="1">
+                        <if expression="i % 2 == 0">
+                            <then>
+                                <assign variable="A" expression="A - i"/>
+                            </then>
+                            <else>
+                                <assign variable="A" expression="A + i"/>
+                            </else>
+                        </if>
+                    </for>
+                    <output expression="A" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="B" expression="0"/>
+                    <for variable="i" start="1" end="x" direction="inc" step="1">
+                        <if expression="i % 3 == 0">
+                            <then>
+                                <assign variable="B" expression="B - i"/>
+                            </then>
+                            <else>
+                                <assign variable="B" expression="B + i"/>
+                            </else>
+                        </if>
+                    </for>
+                    <output expression="B" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

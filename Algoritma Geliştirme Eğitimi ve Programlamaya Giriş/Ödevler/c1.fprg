@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-29 09:11:29 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDk6MDE6Mjcgw5ZTOzM1MTU="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDk6MTE6Mjkgw5ZTOzI7MzYyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, c, t, s" type="Integer" array="False" size=""/>
+            <declare name="o" type="Real" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <output expression="i &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="s"/>
+                <if expression="s % 2 == 0">
+                    <then>
+                        <assign variable="c" expression="c + s"/>
+                    </then>
+                    <else>
+                        <assign variable="t" expression="t + s"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="o" expression="c / t"/>
+            <output expression="o" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

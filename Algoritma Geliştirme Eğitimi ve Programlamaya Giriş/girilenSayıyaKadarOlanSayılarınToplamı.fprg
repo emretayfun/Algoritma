@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 01:08:55 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTI6NDI6MDYgw5ZTOzM1MDc="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDE6MDg6NTUgw5ZTOzU7MzYyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, k, t" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="i"/>
+            <assign variable="t" expression="0"/>
+            <for variable="k" start="0" end="i" direction="inc" step="1">
+                <assign variable="t" expression="t + k"/>
+            </for>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

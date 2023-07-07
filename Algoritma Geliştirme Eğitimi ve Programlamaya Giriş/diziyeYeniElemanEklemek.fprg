@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-22 12:59:34 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MTI6NDQ6MjAgw5ZTOzM1MDI="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MTI6NTk6MzQgw5ZTOzE7MzYyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="20"/>
+            <declare name="i, j, k, e" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="j"/>
+            <for variable="i" start="0" end="j - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;Dizinin ka&#231;&#305;nc&#305; indisine eleman ekleyeceksiniz?&quot;" newline="True"/>
+            <input variable="k"/>
+            <output expression="&quot;Dizinin &quot; &amp; k &amp; &quot;. indise eklenecek olan say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="e"/>
+            <for variable="i" start="j - 1" end="k - 1" direction="dec" step="1">
+                <assign variable="a[i+1]" expression="a[i]"/>
+            </for>
+            <assign variable="a[k - 1]" expression="e"/>
+            <for variable="i" start="0" end="j" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

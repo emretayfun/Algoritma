@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 12:42:03 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTA6MjM6MjQgw5bDljszNjM1"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTI6NDI6MDMgw5ZTOzk7MzYyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yazi1" type="String" array="False" size=""/>
+            <declare name="i, k, m" type="Integer" array="False" size=""/>
+            <output expression="&quot;metni giriniz.&quot;" newline="True"/>
+            <input variable="yazi1"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; 10">
+                <assign variable="i" expression="i + 1"/>
+                <output expression="yazi1" newline="True"/>
+                <for variable="k" start="0" end="100" direction="inc" step="1">
+                    <for variable="m" start="0" end="100" direction="inc" step="1"/>
+                </for>
+            </while>
+            <output expression="&quot;Bitti&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

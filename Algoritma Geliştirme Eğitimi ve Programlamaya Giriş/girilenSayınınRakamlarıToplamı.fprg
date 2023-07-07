@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-29 08:39:45 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDg6MjE6MzAgw5ZTOzM1MTA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDg6Mzk6NDUgw5ZTOzI7MzYzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <output expression="&quot;Bir do&#287;al say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <declare name="r" type="Integer" array="True" size="Len(s)"/>
+            <for variable="i" start="0" end="Len(s) - 1" direction="inc" step="1">
+                <assign variable="r[i]" expression="ToInteger(Char(s, i))"/>
+            </for>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="0" end="Len(s) - 1" direction="inc" step="1">
+                <assign variable="t" expression="t + r[i]"/>
+            </for>
+            <output expression="&quot;Girilen say&#305;n&#305;n rakamlar&#305; toplam&#305; &quot; &amp; t &amp; &quot;'dir.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

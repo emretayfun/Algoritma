@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 10:23:22 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTA6MDg6NTYgw5bDljszNjQz"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTA6MDk6MzQgw5bDljsxO0VtcmUgVGF5ZnVuO0xBUFRPUC1KQVI1NTFTQTsyMDIzLTA1LTA3OzEwOjAxOjI2IMOWw5Y7YWxnb18xMi5mcHJnOzg1ODk="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTA6MjM6MjIgw5bDljszOzM3NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ynot" type="Integer" array="False" size=""/>
+            <output expression="&quot;Notunuzu giriniz.&quot;" newline="True"/>
+            <input variable="ynot"/>
+            <if expression="ynot &gt;= 85 &amp;&amp; ynot &lt;= 100">
+                <then>
+                    <output expression="&quot;5&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ynot &gt;= 70 &amp;&amp; ynot &lt;= 84">
+                        <then>
+                            <output expression="&quot;4&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ynot &gt;= 55 &amp;&amp; ynot &lt;= 69">
+                                <then>
+                                    <output expression="&quot;3&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ynot &gt;= 45 &amp;&amp; ynot &lt;= 54">
+                                        <then>
+                                            <output expression="&quot;2&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="ynot &gt;= 0 &amp;&amp; ynot &lt;= 44">
+                                                <then>
+                                                    <output expression="&quot;1&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;hata&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

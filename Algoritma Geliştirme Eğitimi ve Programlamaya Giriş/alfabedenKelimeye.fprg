@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-27 08:34:51 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDg6MDY6NDEgw5ZTOzM1MTM="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjc7MDg6MzQ6NTEgw5ZTOzU7MzYyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="True" size="29"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <assign variable="s" expression="&quot; &quot;"/>
+            <assign variable="a[0]" expression="&quot;A&quot;"/>
+            <assign variable="a[1]" expression="&quot;B&quot;"/>
+            <assign variable="a[2]" expression="&quot;C&quot;"/>
+            <assign variable="a[3]" expression="&quot;&#199;&quot;"/>
+            <assign variable="a[4]" expression="&quot;D&quot;"/>
+            <assign variable="a[5]" expression="&quot;E&quot;"/>
+            <assign variable="a[6]" expression="&quot;F&quot;"/>
+            <assign variable="a[7]" expression="&quot;G&quot;"/>
+            <assign variable="a[8]" expression="&quot;&#286;&quot;"/>
+            <assign variable="a[9]" expression="&quot;H&quot;"/>
+            <assign variable="a[10]" expression="&quot;I&quot;"/>
+            <assign variable="a[11]" expression="&quot;&#304;&quot;"/>
+            <assign variable="a[12]" expression="&quot;J&quot;"/>
+            <assign variable="a[13]" expression="&quot;K&quot;"/>
+            <assign variable="a[14]" expression="&quot;L&quot;"/>
+            <assign variable="a[15]" expression="&quot;M&quot;"/>
+            <assign variable="a[16]" expression="&quot;N&quot;"/>
+            <assign variable="a[17]" expression="&quot;O&quot;"/>
+            <assign variable="a[18]" expression="&quot;&#214;&quot;"/>
+            <assign variable="a[19]" expression="&quot;P&quot;"/>
+            <assign variable="a[20]" expression="&quot;R&quot;"/>
+            <assign variable="a[21]" expression="&quot;S&quot;"/>
+            <assign variable="a[22]" expression="&quot;&#350;&quot;"/>
+            <assign variable="a[23]" expression="&quot;T&quot;"/>
+            <assign variable="a[24]" expression="&quot;U&quot;"/>
+            <assign variable="a[25]" expression="&quot;&#220;&quot;"/>
+            <assign variable="a[26]" expression="&quot;V&quot;"/>
+            <assign variable="a[27]" expression="&quot;Y&quot;"/>
+            <assign variable="a[28]" expression="&quot;Z&quot;"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="s" expression="s &amp; &quot; &quot; &amp; a[Random(29)]"/>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

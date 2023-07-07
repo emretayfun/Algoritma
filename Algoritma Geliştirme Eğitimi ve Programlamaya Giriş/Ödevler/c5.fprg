@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-29 10:31:56 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MTA6MjA6MDUgw5ZTOzM1MDQ="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MTA6MzE6NTYgw5ZTOzM7MzYyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, tt, tc, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="tt" expression="0"/>
+            <assign variable="tc" expression="1"/>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="i % 2 == 0">
+                    <then>
+                        <assign variable="c" expression="c + i * i"/>
+                    </then>
+                    <else>
+                        <assign variable="tt" expression="tt + i"/>
+                        <assign variable="tc" expression="tc * i"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Girilen &quot; &amp; n &amp; &quot; say&#305;s&#305;na kadar olan tek say&#305;lar&#305;n toplam&#305; &quot; &amp; tt &amp; &quot; ve &#231;arp&#305;m&#305; &quot; &amp; tc &amp; &quot;, &#231;ift say&#305;lar&#305;n karelerinin toplam&#305; ise &quot; &amp; c &amp; &quot; olarak bulunmu&#351;tur.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

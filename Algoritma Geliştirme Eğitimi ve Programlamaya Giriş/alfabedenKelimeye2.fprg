@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-28 02:28:04 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjg7MDI6MjE6MjYgw5bDljszNjM5"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjg7MDI6Mjg6MDQgw5bDljsxOzM3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="h, s" type="String" array="False" size=""/>
+            <assign variable="h" expression="&quot;ABC&#199;DEFG&#286;HI&#304;JKLMNO&#214;PRS&#350;TU&#220;VYZ&quot;"/>
+            <assign variable="s" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="s" expression="s &amp; Char(h, Random(Len(h)))"/>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

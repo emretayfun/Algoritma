@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-06 07:18:56 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MDc6MTQ6Mjcgw5ZTOzM1MTI="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MDc6MTg6NTYgw5ZTOzE7MzYyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yariCap, alan" type="Real" array="False" size=""/>
+            <output expression="&quot;Dairenin yar&#305; &#231;ap&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="yariCap"/>
+            <assign variable="alan" expression="pi*yariCap^2"/>
+            <output expression="&quot;Dairenin alan&#305; &quot; &amp; alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

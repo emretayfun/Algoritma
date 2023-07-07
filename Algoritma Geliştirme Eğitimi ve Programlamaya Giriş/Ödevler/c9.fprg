@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 03:46:52 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDM6MjQ6NTkgw5bDljszNjQy"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDM6NDY6NTIgw5bDljsyOzM3NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, f, j" type="Integer" array="False" size=""/>
+            <declare name="t" type="Real" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="f" expression="1"/>
+                <for variable="j" start="1" end="i + 1" direction="inc" step="1">
+                    <assign variable="f" expression="f * j"/>
+                </for>
+                <assign variable="t" expression="t + i / f"/>
+            </for>
+            <output expression="f" newline="True"/>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+    <function name="yolBir" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, f" type="Integer" array="False" size=""/>
+            <declare name="t" type="Real" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="f" expression="1"/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="f" expression="f * (i + 1)"/>
+                <assign variable="t" expression="t + i / f"/>
+            </for>
+            <output expression="f" newline="True"/>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

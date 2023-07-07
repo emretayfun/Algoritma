@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-23 12:29:04 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MTE6MzI6NDcgw5ZTOzM1MDc="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjM7MTI6Mjk6MDQgw5bDljszOzM3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, e, j, k, f" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dizinin eleman say&#305;s&#305; en fazla ka&#231; olsun?&quot;" newline="True"/>
+            <input variable="f"/>
+            <declare name="a" type="Integer" array="True" size="f"/>
+            <declare name="s" type="String" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; bilgisini saklamak istersiniz?&quot;" newline="True"/>
+            <input variable="e"/>
+            <for variable="i" start="0" end="e - 1" direction="inc" step="1">
+                <output expression="&quot;Dizinin &quot; &amp; i + 1 &amp; &quot;. eleman&#305;n&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="s" expression="&quot; &quot;"/>
+            <while expression="s &lt;&gt; &quot;h&quot; &amp;&amp; e &lt; f">
+                <output expression="&quot;Diziye yeni elaman eklemek ister misiniz? (e / h)&quot;" newline="True"/>
+                <input variable="s"/>
+                <if expression="s == &quot;e&quot;">
+                    <then>
+                        <output expression="&quot;Dizinin ka&#231;&#305;nc&#305; s&#305;ras&#305;na eleman eklemek istersiniz?&quot;" newline="True"/>
+                        <input variable="j"/>
+                        <output expression="j &amp; &quot;. s&#305;raya eklenecek olan yeni eleman&#305;n de&#287;eri nedir?&quot;" newline="True"/>
+                        <input variable="k"/>
+                        <for variable="i" start="e - 1" end="j - 1" direction="dec" step="1">
+                            <assign variable="a[i + 1]" expression="a[i]"/>
+                        </for>
+                        <assign variable="a[j - 1]" expression="k"/>
+                        <for variable="i" start="0" end="e" direction="inc" step="1">
+                            <output expression="a[i]" newline="True"/>
+                        </for>
+                        <assign variable="e" expression="e + 1"/>
+                    </then>
+                    <else>
+                        <for variable="i" start="0" end="e - 1" direction="inc" step="1">
+                            <output expression="a[i]" newline="True"/>
+                        </for>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

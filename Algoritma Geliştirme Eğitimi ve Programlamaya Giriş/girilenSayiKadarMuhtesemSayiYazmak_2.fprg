@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-12 04:51:51 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDQ6MTE6MjQgw5ZTOzM1MDA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDQ6MTE6MjUgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDU6NDY6NDkgw5ZTO2FsZ29fMjMuZnByZzs4MzM5"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDQ6MTI6MDEgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDM6MTY6MzUgw5ZTO2dpcmlsZW5TYXlpS2FkYXJNdWh0ZXNlbVNheWlZYXptYWsuZnByZzsxMTIwNw=="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDQ6NTE6NTEgw5ZTOzM7MzYxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, m, p, bol, k, sayi, toplam, bolen" type="Integer" array="False" size=""/>
+            <declare name="y, z" type="String" array="False" size=""/>
+            <output expression="&quot;Bir tutar giriniz.&quot;" newline="True"/>
+            <input variable="i"/>
+            <assign variable="y" expression="&quot; &quot;"/>
+            <assign variable="z" expression="&quot; &quot;"/>
+            <assign variable="m" expression="0"/>
+            <assign variable="p" expression="2"/>
+            <while expression="m &lt;&gt; i">
+                <assign variable="bol" expression="2"/>
+                <while expression="p%bol != 0">
+                    <assign variable="bol" expression="bol + 1"/>
+                </while>
+                <if expression="p == bol">
+                    <then>
+                        <assign variable="k" expression="2^p - 1"/>
+                        <assign variable="bol" expression="2"/>
+                        <while expression="k%bol != 0">
+                            <assign variable="bol" expression="bol + 1"/>
+                        </while>
+                        <if expression="k == bol">
+                            <then>
+                                <assign variable="sayi" expression="k*(2^(p -1 ))"/>
+                                <assign variable="toplam" expression="1"/>
+                                <for variable="bolen" start="2" end="sayi/2" direction="inc" step="1">
+                                    <if expression="sayi%bolen == 0">
+                                        <then>
+                                            <assign variable="toplam" expression="toplam + bolen"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </for>
+                                <if expression="toplam == sayi">
+                                    <then>
+                                        <assign variable="z" expression="z &amp; y &amp; sayi"/>
+                                        <assign variable="m" expression="m + 1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="p" expression="p + 1"/>
+            </while>
+            <output expression="z" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

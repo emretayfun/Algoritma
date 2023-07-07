@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-04 01:41:32 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MTE6NTg6MTcgw5ZTOzM1MTQ="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDYtMDQ7MDE6NDE6MzIgw5bDljsxMzszNzkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yas" type="Integer" array="False" size=""/>
+            <declare name="uniMezun, ehliyet" type="String" array="False" size=""/>
+            <output expression="&quot;Ka&#231; ya&#351;&#305;ndas&#305;n&#305;z?&quot;" newline="True"/>
+            <input variable="yas"/>
+            <if expression="yas &gt;= 18 &amp;&amp; yas &lt; 40">
+                <then>
+                    <output expression="&quot;&#220;niversite mezunumusunuz? (E / H)&quot;" newline="True"/>
+                    <input variable="uniMezun"/>
+                    <output expression="&quot;Ehliyetiniz var m&#305;? (E / H)&quot;" newline="True"/>
+                    <input variable="ehliyet"/>
+                    <if expression="ehliyet == &quot;E&quot; &amp;&amp; uniMezun == &quot;E&quot;">
+                        <then>
+                            <output expression="&quot;Tebrikler, i&#351;e al&#305;nd&#305;n&#305;z. Sizinle &#231;al&#305;&#351;maktan mutluluk duyaca&#287;&#305;m&#305;z&#305; en i&#231;ten duygular&#305;m&#305;z ile belitmek isteriz.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#304;&#351;e al&#305;namad&#305;&#287;&#305;n&#305;z&#305; &#252;z&#252;lerek bildirmekteyiz. Kariyer hedeflerinizde ba&#351;ar&#305;lar dileriz.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;&#304;&#351;e al&#305;namad&#305;&#287;&#305;n&#305;z&#305; &#252;z&#252;lerek bildirmekteyiz. Kariyer hedeflerinizde ba&#351;ar&#305;lar dileriz.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

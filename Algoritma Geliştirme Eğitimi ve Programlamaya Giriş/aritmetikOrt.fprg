@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-06 09:14:33 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MDc6MjE6MjQgw5ZTOzM1MDc="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MDk6MTQ6MzMgw5ZTOzI7MzYyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, ort" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;&#220;&#231;&#252;nc&#252; say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="ort" expression="(a+b+c)/3"/>
+            <output expression="&quot;Girilen &#252;&#231; say&#305;n&#305;n ortalamas&#305;: &quot; &amp; ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

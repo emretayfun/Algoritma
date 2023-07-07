@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 06:58:54 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDY6MzY6NDQgw5ZTOzM1MTU="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDY6MzY6NDYgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDY6MjU6MzEgw5ZTO2FsZ29fMjQuZnByZzs4MzQ1"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDY6NTg6NTQgw5ZTOzI7MzYyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <for variable="a" start="1" end="10" direction="inc" step="1">
+                <for variable="b" start="1" end="10" direction="inc" step="1">
+                    <output expression="a &amp; &quot; x &quot; &amp; b &amp; &quot; = &quot; &amp; a*b" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

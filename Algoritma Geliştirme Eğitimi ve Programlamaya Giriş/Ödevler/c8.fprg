@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 03:24:55 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDI6NDU6NTcgw5bDljszNjQy"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDM6MjQ6NTUgw5bDljs0OzM3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, b, s1, s2, s3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <output expression="&quot;Girilen say&#305;n&#305;n ka&#231;&#305;nc&#305; basamaktaki say&#305;y&#305; istersiniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="s1" expression="s % 10^(b - 1)"/>
+            <assign variable="s2" expression="(s - s1) / 10^(b - 1)"/>
+            <assign variable="s3" expression="s2 % 10"/>
+            <output expression="s &amp; &quot; say&#305;s&#305;n&#305;n &quot; &amp; b &amp; &quot;. basama&#287;&#305;ndaki say&#305; &quot; &amp; s3 &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="yolBir" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, b" type="Integer" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <for variable="i" start="0" end="Len(s) - 1" direction="inc" step="1">
+                <assign variable="b" expression="ToInteger(Char(s, i))"/>
+                <output expression="b" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 04:04:54 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDM6NTA6NTAgw5bDljszNjMy"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDQ6MDQ6NTQgw5bDljsyOzM3NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="0" end="Len(s) - 1" direction="inc" step="1">
+                <assign variable="t" expression="t + (ToInteger(Char(s, i)))^(Len(s))"/>
+            </for>
+            <if expression="t == ToInteger(s)">
+                <then>
+                    <output expression="t &amp; &quot; say&#305;s&#305; Armstrong bir say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="ToInteger(s) &amp; &quot; say&#305;s&#305; Armstrong bir say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 07:55:54 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDY6MzI6MTggw5ZTOzM1MDg="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDc6NTU6NTQgw5ZTOzU7MzYyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, i, a, b" type="Integer" array="False" size=""/>
+            <for variable="s" start="0" end="100" direction="inc" step="1">
+                <assign variable="i" expression="2"/>
+                <assign variable="b" expression="0"/>
+                <while expression="b == 0 &amp;&amp; i^2 &lt; s">
+                    <assign variable="a" expression="sqrt(s - i^2)"/>
+                    <if expression="a^2 + i^2 == s &amp;&amp; a &lt;&gt; 1">
+                        <then>
+                            <assign variable="b" expression="1"/>
+                        </then>
+                        <else>
+                            <assign variable="i" expression="i + 1"/>
+                        </else>
+                    </if>
+                </while>
+                <if expression="b == 1">
+                    <then>
+                        <output expression="i &amp; &quot;^2 + &quot; &amp; a &amp; &quot;^2 = &quot; &amp; i^2 &amp; &quot; + &quot; &amp; a^2 &amp; &quot; = &quot; &amp; s" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+    <function name="yolBir" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, i, a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir pozitif tam say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="b" expression="0"/>
+            <while expression="b == 0 &amp;&amp; i^2 &lt; s">
+                <assign variable="a" expression="sqrt(s - i^2)"/>
+                <if expression="a^2 + i^2 == s">
+                    <then>
+                        <output expression="a &amp; &quot;^2 + &quot; &amp; i &amp; &quot;^2 = &quot; &amp; s" newline="True"/>
+                        <assign variable="b" expression="1"/>
+                    </then>
+                    <else>
+                        <assign variable="i" expression="i + 1"/>
+                    </else>
+                </if>
+            </while>
+            <if expression="b == 1">
+                <then>
+                    <output expression="a^2 &amp; &quot; + &quot; &amp; i^2 &amp; &quot; = &quot; &amp; s" newline="True"/>
+                </then>
+                <else>
+                    <output expression="s &amp; &quot; say&#305;s&#305; iki farkl&#305; tam say&#305;n&#305;n kareleri toplam&#305; olarak yaz&#305;lamamktad&#305;r.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

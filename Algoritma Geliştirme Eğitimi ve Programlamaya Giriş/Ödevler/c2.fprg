@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-29 09:32:35 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDk6MTE6NDUgw5ZTOzM1MTY="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDk6MzI6MzUgw5ZTOzQ7MzYyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, a, k" type="Integer" array="False" size=""/>
+            <for variable="a" start="2" end="1000000" direction="inc" step="1">
+                <assign variable="k" expression="0"/>
+                <assign variable="s" expression="a"/>
+                <while expression="s % 5 == 0">
+                    <assign variable="s" expression="s / 5"/>
+                    <assign variable="k" expression="k + 1"/>
+                </while>
+                <if expression="s == 1">
+                    <then>
+                        <output expression="a &amp; &quot; say&#305;s&#305; 5'in &quot; &amp; k &amp; &quot;. kuvveti.&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

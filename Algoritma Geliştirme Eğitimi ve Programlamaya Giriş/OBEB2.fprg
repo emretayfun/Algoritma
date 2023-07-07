@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-12 02:06:01 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDE6MTQ6MTYgw5bDljszNjMy"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDI6MDY6MDEgw5ZTOzg7MzYxMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, j, a1, b1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="a1" expression="a"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="b1" expression="b"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="j" expression="1"/>
+            <while expression="a &lt;&gt; 1 &amp;&amp; b &lt;&gt; 1">
+                <if expression="a % i == 0 &amp;&amp; b % i == 0">
+                    <then>
+                        <assign variable="a" expression="a / i"/>
+                        <assign variable="b" expression="b / i"/>
+                        <assign variable="j" expression="j * i"/>
+                    </then>
+                    <else>
+                        <if expression="a % i == 0">
+                            <then>
+                                <assign variable="a" expression="a / i"/>
+                            </then>
+                            <else>
+                                <if expression="b % i == 0">
+                                    <then>
+                                        <assign variable="b" expression="b / i"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="i" expression="i + 1"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="a1 &amp; &quot; ve &quot; &amp; b1 &amp; &quot; say&#305;lar&#305;n&#305;n OBEB'i: &quot; &amp; j" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

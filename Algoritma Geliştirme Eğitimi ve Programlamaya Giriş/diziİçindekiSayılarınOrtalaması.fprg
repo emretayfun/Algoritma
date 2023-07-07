@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-22 08:42:02 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MDg6MjY6NTAgw5bDljszNjQx"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MDg6NDI6MDIgw5bDljsyOzM3NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="True" size="5"/>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <declare name="o" type="Real" array="False" size=""/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. notunuzu giriniz.&quot;" newline="True"/>
+                <input variable="n[i]"/>
+                <assign variable="t" expression="t + n[i]"/>
+            </for>
+            <assign variable="o" expression="t / 5"/>
+            <output expression="o" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

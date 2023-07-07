@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-22 08:25:56 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MDg6MDA6NDggw5bDljszNjQw"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MDg6MDA6NTAgw5bDljsxO0VtcmUgVGF5ZnVuO0xBUFRPUC1KQVI1NTFTQTsyMDIzLTA1LTIyOzA3OjQ5OjI0IMOWw5Y7ZGl6acSww6dlcmnEn2luaURlxJ9pxZ90aXJtZWsuZnByZzsxMTQ0MA=="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MDg6MjU6NTYgw5bDljs0OzM3NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="True" size="5"/>
+            <declare name="i, b, k" type="Integer" array="False" size=""/>
+            <assign variable="n[0]" expression="155"/>
+            <assign variable="n[1]" expression="76"/>
+            <assign variable="n[2]" expression="50"/>
+            <assign variable="n[3]" expression="91"/>
+            <assign variable="n[4]" expression="26"/>
+            <assign variable="b" expression="n[0]"/>
+            <assign variable="k" expression="n[0]"/>
+            <for variable="i" start="1" end="4" direction="inc" step="1">
+                <if expression="n[i] &gt; b">
+                    <then>
+                        <assign variable="b" expression="n[i]"/>
+                    </then>
+                    <else>
+                        <if expression="n[i] &lt; k">
+                            <then>
+                                <assign variable="k" expression="n[i]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="k" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

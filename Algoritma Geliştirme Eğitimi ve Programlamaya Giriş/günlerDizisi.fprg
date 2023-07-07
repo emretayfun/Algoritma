@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-22 07:49:21 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MDg6MzU6Mjcgw5ZTOzM1MTM="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjI7MDc6NDk6MjEgw5bDljszOzM3NTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="g" type="String" array="True" size="7"/>
+            <declare name="gun, i" type="Integer" array="False" size=""/>
+            <assign variable="g[0]" expression="&quot;Pazartesi&quot;"/>
+            <assign variable="g[1]" expression="&quot;Sal&#305;&quot;"/>
+            <assign variable="g[2]" expression="&quot;&#199;ar&#351;amba&quot;"/>
+            <assign variable="g[3]" expression="&quot;Per&#351;embe&quot;"/>
+            <assign variable="g[4]" expression="&quot;Cuma&quot;"/>
+            <assign variable="g[5]" expression="&quot;Cumartesi&quot;"/>
+            <assign variable="g[6]" expression="&quot;Pazar&quot;"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="g[i]" newline="True"/>
+            </for>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; 7">
+                <output expression="g[i]" newline="True"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

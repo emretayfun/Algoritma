@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 11:27:08 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MTE6MDM6Mjcgw5ZTOzM1MDI="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MTE6MDQ6NTggw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDg6MjU6NDMgw5ZTO2RpemnEsMOnaW5kZURlxJ9pxZ9pa0JpcsSwxZ9sZW1fMi5mcHJnOzExNjMw"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MTE6Mjc6MDggw5ZTOzQ7MzYxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, i, j, t" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a, k" type="Integer" array="True" size="b"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <assign variable="t" expression="0"/>
+                <for variable="j" start="i + 1" end="b - 1" direction="inc" step="1">
+                    <if expression="a[i] &gt; a[j]">
+                        <then>
+                            <assign variable="t" expression="t + 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="k[i]" expression="t"/>
+            </for>
+            <declare name="y" type="String" array="False" size=""/>
+            <assign variable="y" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <assign variable="y" expression="y &amp; k[i]"/>
+            </for>
+            <output expression="y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

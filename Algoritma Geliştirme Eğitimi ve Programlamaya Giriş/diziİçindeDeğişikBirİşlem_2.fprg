@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 11:01:35 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDg6MjU6NDMgw5ZTOzM1MTA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDg6MjU6NDUgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDc6NTU6NTYgw5ZTO2RpemnEsMOnaW5kZURlxJ9pxZ9pa0JpcsSwxZ9sZW0uZnByZzsxMTQ5Ng=="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MTE6MDE6MzUgw5ZTOzk7MzYxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, i, j, g, s, k" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a" type="Integer" array="True" size="b"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="j" start="0" end="b - 2" direction="inc" step="1">
+                <for variable="i" start="0" end="b - 2" direction="inc" step="1">
+                    <if expression="a[i] &gt; a[i + 1]">
+                        <then>
+                            <assign variable="g" expression="a[i]"/>
+                            <assign variable="a[i]" expression="a[i + 1]"/>
+                            <assign variable="a[i + 1]" expression="g"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="b - 1"/>
+            <assign variable="k" expression="0"/>
+            <while expression="i &lt;&gt; j &amp;&amp; k == 0">
+                <if expression="s &lt; a[i] + a[j]">
+                    <then>
+                        <assign variable="j" expression="j - 1"/>
+                    </then>
+                    <else>
+                        <if expression="s &gt; a[i] + a[j]">
+                            <then>
+                                <assign variable="i" expression="i + 1"/>
+                            </then>
+                            <else>
+                                <assign variable="k" expression="1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <if expression="i == j">
+                <then>
+                    <output expression="&quot;Girilen say&#305;, dizideki say&#305;lar&#305;n toplam&#305; &#351;eklinde yaz&#305;lamamaktad&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="a[j] &amp; &quot; + &quot; &amp; a[i] &amp; &quot; = &quot; &amp; s" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="yolBir" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, i, j, c, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a" type="Integer" array="True" size="b"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="c" start="0" end="100" direction="inc" step="1">
+                <assign variable="j" expression="0"/>
+                <assign variable="d" expression="0"/>
+                <while expression="d == 0 &amp;&amp; j &lt; b">
+                    <assign variable="i" expression="0"/>
+                    <while expression="d == 0 &amp;&amp; i &lt; b">
+                        <if expression="c == a[j] + a[i]">
+                            <then>
+                                <assign variable="d" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="i" expression="i + 1"/>
+                    </while>
+                    <assign variable="j" expression="j + 1"/>
+                </while>
+                <if expression="d == 1">
+                    <then>
+                        <output expression="a[j - 1]&amp;&quot; + &quot;&amp;a[i - 1]&amp;&quot; = &quot;&amp;c" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+    <function name="yol&#304;ki" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, i, j, c, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; tane say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a" type="Integer" array="True" size="b"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="c" start="0" end="100" direction="inc" step="1">
+                <for variable="j" start="0" end="b - 2" direction="inc" step="1">
+                    <for variable="i" start="j + 1" end="b - 1" direction="inc" step="1">
+                        <if expression="c == a[j] + a[i]">
+                            <then>
+                                <output expression="a[j]&amp;&quot; + &quot;&amp;a[i]&amp;&quot; = &quot;&amp;c" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

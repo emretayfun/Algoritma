@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 12:43:08 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTI6Mjk6NDcgw5bDljszNjQ4"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTI6NDM6MDggw5bDljs4OzM3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;x say&#305;s&#305;n&#305;n de&#287;erini giriniz.&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; 1">
+                <then>
+                    <assign variable="y" expression="3*x - 4"/>
+                </then>
+                <else>
+                    <if expression="x &gt; 10">
+                        <then>
+                            <assign variable="y" expression="2*x + 4"/>
+                        </then>
+                        <else>
+                            <assign variable="y" expression="x + 2"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;y = &quot; &amp;  y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

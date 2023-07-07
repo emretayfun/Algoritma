@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-06 11:58:15 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MTE6NDc6NTggw5ZTOzM1MTc="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MTE6NTg6MTUgw5ZTOzQ7MzYyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="Real" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="s"/>
+            <if expression="s &lt; 0">
+                <then>
+                    <output expression="&quot;Negatif say&#305;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s = 0">
+                        <then>
+                            <output expression="&quot;Say&#305; 0'd&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pozitif say&#305;&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

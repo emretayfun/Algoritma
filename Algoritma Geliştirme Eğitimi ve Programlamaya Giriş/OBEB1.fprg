@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 04:10:16 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MTI6NDM6MDMgw5bDljszNjMy"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDQ6MTA6MTYgw5bDljszOzM3NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Biinci say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="i" expression="a"/>
+            <output expression="&quot;&#304;kinci say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="j" expression="b"/>
+            <while expression="a &lt;&gt; b">
+                <if expression="a &gt; b">
+                    <then>
+                        <assign variable="a" expression="a - b"/>
+                    </then>
+                    <else>
+                        <assign variable="b" expression="b - a"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="i &amp; &quot; ve &quot; &amp; j &amp; &quot; say&#305;lar&#305;n&#305;n en b&#252;y&#252;k ortak b&#246;leni: &quot; &amp; a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

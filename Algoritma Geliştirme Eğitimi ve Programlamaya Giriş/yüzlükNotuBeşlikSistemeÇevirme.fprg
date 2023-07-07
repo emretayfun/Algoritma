@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 10:08:53 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTA6MDE6MjYgw5bDljszNjMz"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MTA6MDg6NTMgw5bDljszOzM3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ynot" type="Integer" array="False" size=""/>
+            <declare name="bnot" type="Real" array="False" size=""/>
+            <output expression="&quot;Notunuzu giriniz.&quot;" newline="True"/>
+            <input variable="ynot"/>
+            <assign variable="bnot" expression="5*ynot/100"/>
+            <output expression="&quot;Notunuzun 5'lik sistemdeki kar&#351;&#305;l&#305;&#287;&#305;: &quot; &amp; bnot" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

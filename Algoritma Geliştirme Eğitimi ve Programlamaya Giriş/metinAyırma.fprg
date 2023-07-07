@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-29 08:21:28 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDc6NTI6MDQgw5ZTOzM1MTQ="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjk7MDg6MjE6Mjggw5ZTOzQ7MzYyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="m, s" type="String" array="False" size=""/>
+            <assign variable="m" expression="&quot;Duydun mu cano? Parka gidecekmi&#351;, iki g&#246;z&#252;m&#252;n &#231;i&#231;e&#287;i.&quot;"/>
+            <assign variable="m" expression="m &amp; &quot; &quot;"/>
+            <assign variable="s" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="Len(m) - 1" direction="inc" step="1">
+                <if expression="Char(m, i) &lt;&gt; &quot; &quot;">
+                    <then>
+                        <assign variable="s" expression="s &amp; Char(m, i)"/>
+                    </then>
+                    <else>
+                        <output expression="s" newline="True"/>
+                        <assign variable="s" expression="&quot; &quot;"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

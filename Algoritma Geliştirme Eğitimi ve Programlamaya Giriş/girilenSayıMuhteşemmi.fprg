@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 03:57:39 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDM6NDI6MTQgw5ZTOzM1MDY="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDM6NDI6MTkgw5ZTOzE7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDI6MDk6NDQgw5ZTO2FsZ29fMTkuZnByZzs4MzQ1"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDc7MDM6NTc6Mzkgw5ZTOzE7MzYyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bolen, sayi, toplam" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="toplam" expression="1"/>
+            <for variable="bolen" start="2" end="sayi/2" direction="inc" step="1">
+                <if expression="sayi%bolen == 0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + bolen"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="toplam == sayi &amp;&amp; sayi != 1">
+                <then>
+                    <output expression="sayi &amp; &quot; say&#305;n&#305;z MUHTE&#350;EM bir say&#305;d&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z muhte&#351;em say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

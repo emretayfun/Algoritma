@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-12 12:42:58 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTE7MDc6NTg6MzAgw5ZTOzM1MTA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTE7MDg6MDg6MzQgw5ZTOzc7RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTE7MDc6MDk6NDcgw5ZTO21lYnVzU2VjaW1pLmZwcmc7ODg3NQ=="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTI7MTI6NDI6NTggw5bDljsxMjszNzk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, e, f, a2, b2, c2, d2, e2, f2" type="Real" array="False" size=""/>
+            <declare name="i, a1, b1, c1, d1, e1, f1" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="a1" expression="2"/>
+            <assign variable="b1" expression="2"/>
+            <assign variable="c1" expression="2"/>
+            <assign variable="d1" expression="2"/>
+            <assign variable="e1" expression="2"/>
+            <assign variable="f1" expression="2"/>
+            <output expression="&quot;a Partisinin ald&#305;&#287;&#305; oyu giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b Partisinin ald&#305;&#287;&#305; oyu giriniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c Partisinin ald&#305;&#287;&#305; oyu giriniz.&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;d Partisinin ald&#305;&#287;&#305; oyu giriniz.&quot;" newline="True"/>
+            <input variable="d"/>
+            <output expression="&quot;e Partisinin ald&#305;&#287;&#305; oyu giriniz.&quot;" newline="True"/>
+            <input variable="e"/>
+            <output expression="&quot;f Partisinin ald&#305;&#287;&#305; oyu giriniz.&quot;" newline="True"/>
+            <input variable="f"/>
+            <assign variable="a2" expression="a"/>
+            <assign variable="b2" expression="b"/>
+            <assign variable="c2" expression="c"/>
+            <assign variable="d2" expression="d"/>
+            <assign variable="e2" expression="e"/>
+            <assign variable="f2" expression="f"/>
+            <while expression="i &lt; 11">
+                <if expression="a &gt;= b &amp;&amp; a &gt;= c &amp;&amp; a &gt;= d &amp;&amp; a &gt;= e &amp;&amp; a &gt;= f">
+                    <then>
+                        <assign variable="a" expression="a2"/>
+                        <output expression="i &amp; &quot;. s&#305;ra millet vekili a partisinden se&#231;ilmi&#351;tir.&quot;" newline="True"/>
+                        <assign variable="a" expression="a / a1"/>
+                        <assign variable="a1" expression="a1 + 1"/>
+                    </then>
+                    <else>
+                        <if expression="b &gt;= a &amp;&amp; b &gt;= c &amp;&amp; b &gt;= d &amp;&amp; b &gt;= e &amp;&amp; b &gt;= f">
+                            <then>
+                                <assign variable="b" expression="b2"/>
+                                <output expression="i &amp; &quot;. s&#305;ra millet vekili b partisinden se&#231;ilmi&#351;tir.&quot;" newline="True"/>
+                                <assign variable="b" expression="b / b1"/>
+                                <assign variable="b1" expression="b1 + 1"/>
+                            </then>
+                            <else>
+                                <if expression="c &gt;= a &amp;&amp; c &gt;= b &amp;&amp; c &gt;= d &amp;&amp; c &gt;= e &amp;&amp; c &gt;= f">
+                                    <then>
+                                        <assign variable="c" expression="c2"/>
+                                        <output expression="i &amp; &quot;. s&#305;ra millet vekili c partisinden se&#231;ilmi&#351;tir.&quot;" newline="True"/>
+                                        <assign variable="c" expression="c / c1"/>
+                                        <assign variable="c1" expression="c1 + 1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="d &gt;= a &amp;&amp; d &gt;= b &amp;&amp; d &gt;= c &amp;&amp; d &gt;= e &amp;&amp; d &gt;= f">
+                                            <then>
+                                                <assign variable="d" expression="d2"/>
+                                                <output expression="i &amp; &quot;. s&#305;ra millet vekili d partisinden se&#231;ilmi&#351;tir.&quot;" newline="True"/>
+                                                <assign variable="d" expression="d / d1"/>
+                                                <assign variable="d1" expression="d1 + 1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="e &gt;= a &amp;&amp; e &gt;= b &amp;&amp; e &gt;= c &amp;&amp; e &gt;= d &amp;&amp; e &gt;= f">
+                                                    <then>
+                                                        <assign variable="e" expression="e2"/>
+                                                        <output expression="i &amp; &quot;. s&#305;ra millet vekili e partisinden se&#231;ilmi&#351;tir.&quot;" newline="True"/>
+                                                        <assign variable="e" expression="e / e1"/>
+                                                        <assign variable="e1" expression="e1 + 1"/>
+                                                    </then>
+                                                    <else>
+                                                        <assign variable="f" expression="f2"/>
+                                                        <output expression="i &amp; &quot;. s&#305;ra millet vekili f partisinden se&#231;ilmi&#351;tir.&quot;" newline="True"/>
+                                                        <assign variable="f" expression="f / f1"/>
+                                                        <assign variable="f1" expression="f1 + 1"/>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

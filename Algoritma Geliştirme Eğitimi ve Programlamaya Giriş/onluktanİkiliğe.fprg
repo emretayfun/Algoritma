@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-11 07:06:16 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTE7MDQ6MjM6NDIgw5ZTOzM1MDI="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTE7MDc6MDY6MTYgw5ZTOzc7MzYyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, kalan" type="Integer" array="False" size=""/>
+            <declare name="ikilik" type="String" array="False" size=""/>
+            <assign variable="ikilik" expression="&quot; &quot;"/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi &gt; 1">
+                <assign variable="kalan" expression="sayi % 2"/>
+                <assign variable="ikilik" expression="kalan &amp; ikilik"/>
+                <assign variable="sayi" expression="int(sayi / 2)"/>
+            </while>
+            <assign variable="ikilik" expression="sayi &amp; ikilik"/>
+            <output expression="ikilik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

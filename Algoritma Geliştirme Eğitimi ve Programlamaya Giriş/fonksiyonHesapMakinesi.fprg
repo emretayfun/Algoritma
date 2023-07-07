@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-26 11:39:46 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjY7MTE6MDA6NTkgw5ZTOzM1MDk="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMjY7MTE6Mzk6NDYgw5ZTOzI7MzYyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; say&#305; gireceksiniz?&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="a" type="Integer" array="True" size="b"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <call expression="toplama (b, a)"/>
+            <call expression="&#231;arpma (b, a)"/>
+        </body>
+    </function>
+    <function name="&#231;arpma" type="None" variable="">
+        <parameters>
+            <parameter name="b" type="Integer" array="False"/>
+            <parameter name="a" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i, ch" type="Integer" array="False" size=""/>
+            <assign variable="ch" expression="1"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <assign variable="ch" expression="ch * a[i]"/>
+            </for>
+            <output expression="&quot;&#199;arp&#305;mlar&#305; = &quot; &amp; ch" newline="True"/>
+        </body>
+    </function>
+    <function name="toplama" type="None" variable="">
+        <parameters>
+            <parameter name="b" type="Integer" array="False"/>
+            <parameter name="a" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="0" end="b - 1" direction="inc" step="1">
+                <assign variable="t" expression="t + a[i]"/>
+            </for>
+            <output expression="&quot;Taplamlar&#305; = &quot; &amp; t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-18 07:23:31 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTg7MDU6NTg6NDggw5ZTOzM1MjQ="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMTg7MDc6MjM6MzEgw5ZTOzI7MzYxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, g, d, b, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Kuzey'in oyu&quot;" newline="True"/>
+            <input variable="k"/>
+            <output expression="&quot;G&#252;ney'in oyu&quot;" newline="True"/>
+            <input variable="g"/>
+            <output expression="&quot;Do&#287;u'nun oyu&quot;" newline="True"/>
+            <input variable="d"/>
+            <output expression="&quot;Bat&#305;'n&#305;n oyu&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="k &lt; g &amp;&amp; k &lt; d &amp;&amp; k &lt; b">
+                <then>
+                    <assign variable="d" expression="d + k"/>
+                    <if expression="g &lt; d &amp;&amp; g &lt; b">
+                        <then>
+                            <assign variable="d" expression="d + g"/>
+                            <if expression="d &lt; b">
+                                <then>
+                                    <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="d == b">
+                                        <then>
+                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;do&#287;u&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="d &lt; g &amp;&amp; d &lt; b">
+                                <then>
+                                    <assign variable="g" expression="g + d"/>
+                                    <if expression="g &lt; b">
+                                        <then>
+                                            <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="g == b">
+                                                <then>
+                                                    <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;g&#252;ney&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="g" expression="g + b"/>
+                                    <if expression="d &lt; b">
+                                        <then>
+                                            <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="d == b">
+                                                <then>
+                                                    <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;do&#287;u&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="g &lt; k &amp;&amp; g &lt; d &amp;&amp; g &lt; b">
+                        <then>
+                            <assign variable="d" expression="d + g"/>
+                            <if expression="k &lt; d &amp;&amp; k &lt; b">
+                                <then>
+                                    <assign variable="d" expression="d + k"/>
+                                    <if expression="d &lt; b">
+                                        <then>
+                                            <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="d == b">
+                                                <then>
+                                                    <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;do&#287;u&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="d &lt; k &amp;&amp; d &lt; b">
+                                        <then>
+                                            <assign variable="k" expression="k + d"/>
+                                            <if expression="k &lt; b">
+                                                <then>
+                                                    <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="k == b">
+                                                        <then>
+                                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;kuzey&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="k" expression="k + b"/>
+                                            <if expression="k &lt; d">
+                                                <then>
+                                                    <output expression="&quot;do&#287;u&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="k == d">
+                                                        <then>
+                                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;kuzey&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="d &lt; k &amp;&amp; d &lt; g &amp;&amp; d &lt; b">
+                                <then>
+                                    <assign variable="g" expression="g + d"/>
+                                    <if expression="k &lt; g &amp;&amp; k &lt; b">
+                                        <then>
+                                            <assign variable="g" expression="g + k"/>
+                                            <if expression="g &lt; b">
+                                                <then>
+                                                    <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="g == b">
+                                                        <then>
+                                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;g&#252;ney&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="g &lt; k &amp;&amp; g &lt; b">
+                                                <then>
+                                                    <assign variable="k" expression="k + g"/>
+                                                    <if expression="k &lt; b">
+                                                        <then>
+                                                            <output expression="&quot;bat&#305;&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="k == b">
+                                                                <then>
+                                                                    <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;kuzey&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="k" expression="k + b"/>
+                                                    <if expression="k &lt; g">
+                                                        <then>
+                                                            <output expression="&quot;g&#252;ney&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="k == g">
+                                                                <then>
+                                                                    <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;kuzey&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="b &lt; k &amp;&amp; b &lt; g &amp;&amp; b &lt; d">
+                                        <then>
+                                            <assign variable="k" expression="k + b"/>
+                                            <if expression="k &lt; g &amp;&amp; k &lt; d">
+                                                <then>
+                                                    <assign variable="d" expression="d + k"/>
+                                                    <if expression="d &lt; g">
+                                                        <then>
+                                                            <output expression="&quot;g&#252;ney&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="d == g">
+                                                                <then>
+                                                                    <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;do&#287;u&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="d &lt; k &amp;&amp; d &lt; g">
+                                                        <then>
+                                                            <assign variable="g" expression="g + d"/>
+                                                            <if expression="k &lt; g">
+                                                                <then>
+                                                                    <output expression="&quot;g&#252;ney&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="k == g">
+                                                                        <then>
+                                                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;kuzey&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="d" expression="d + g"/>
+                                                            <if expression="k &lt; d">
+                                                                <then>
+                                                                    <output expression="&quot;do&#287;u&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="k == d">
+                                                                        <then>
+                                                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;kuzey&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Oylar e&#351;it.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

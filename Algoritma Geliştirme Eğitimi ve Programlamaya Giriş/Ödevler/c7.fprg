@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-30 02:45:45 &#214;&#214;"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDI6MjQ6Mzkgw5bDljszNjM5"/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMzA7MDI6NDU6NDUgw5bDljsyOzM3NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, i, t, b, r" type="Integer" array="False" size=""/>
+            <declare name="p, ss" type="String" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="s"/>
+            <assign variable="ss" expression="ToString(s)"/>
+            <assign variable="r" expression="0"/>
+            <for variable="i" start="0" end="Len(ss) - 1" direction="inc" step="1">
+                <assign variable="r" expression="r + ToInteger(Char(ss, i))"/>
+            </for>
+            <output expression="&quot;Girilen say&#305;n&#305;n rakamlar&#305; toplam&#305;: &quot; &amp; r" newline="True"/>
+            <assign variable="p" expression="&quot; &quot;"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="t" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <while expression="i &lt;= s">
+                <if expression="s % i == 0">
+                    <then>
+                        <assign variable="p" expression="p &amp; &quot; &quot; &amp; i"/>
+                        <assign variable="t" expression="t + i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="&quot;Girilen say&#305;n&#305;n pozitif tam b&#246;lenleri: &quot; &amp; p" newline="True"/>
+            <output expression="&quot;Girilen say&#305;n&#305;n pozitif tam b&#246;lenlerinin toplam&#305;: &quot; &amp; t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

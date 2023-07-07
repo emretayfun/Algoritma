@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Emre Tayfun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-06 07:10:20 &#214;S"/>
+        <attribute name="created" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MDY6Mjg6MjEgw5ZTOzM1MTA="/>
+        <attribute name="edited" value="RW1yZSBUYXlmdW47TEFQVE9QLUpBUjU1MVNBOzIwMjMtMDUtMDY7MDc6MTA6MjAgw5ZTOzI7MzYxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kisaKenar, uzunKenar, alan, cevre" type="Integer" array="False" size=""/>
+            <output expression="&quot;K&#305;sa kenar uzunlu&#287;unu giriniz&quot;" newline="True"/>
+            <input variable="kisaKenar"/>
+            <output expression="&quot;Uzun kenar uzunlu&#287;unu giriniz&quot;" newline="True"/>
+            <input variable="uzunKenar"/>
+            <assign variable="alan" expression="uzunKenar*kisaKenar"/>
+            <assign variable="cevre" expression="2*(kisaKenar+uzunKenar)"/>
+            <output expression="&quot;Dikd&#246;rtgenin alan&#305;: &quot; &amp; alan" newline="True"/>
+            <output expression="&quot;Dikd&#246;rtgenin &#231;evresi: &quot; &amp; cevre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
